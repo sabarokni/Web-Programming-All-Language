@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2020, 11:03:21 AM
+    Author     : Lenovo
+*/
+.error {color: #FF0000;}
+.registration form {
+  background-color: white;
+  padding: 0px 0px 0px 100px;
+  border-radius: 95px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Century Gothic";
+}
+
+.registration input,.registration select {
+  width: 300px;
+  margin: 5px;
+  font-weight: bold;
+
+}
+
+.registration input:focus {
+  background-color: orange;
+}
+.registration form label {
+  margin: 5px 0px 0px 5px;
+}
+
+
+.register_button {
+  width: 149px;
+  height: 42px;
+  background-color: orange;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  clear: both;
+  font-size: 15px;
+
+}
+.clear_button {
+  width: 149px;
+  height: 42px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  clear: both;
+  font-size: 15px;
+}
+.register_button span {
+  font-weight: normal;
+  font-size: 28px;
+  font-family: "Impact";
+  line-height: 40px;
+}
+
+.register_button span a {
+  text-decoration: none;
+  color: white;
+}
+
+.register_button span a:hover {
+  color: black;
+}
+

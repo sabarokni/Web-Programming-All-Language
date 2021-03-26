@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Upload File</title>
+</head>
+<body>
+    <h3>Upload Your Files</h3>
+   <form action="uploadfile2.php" method="post"  enctype="multipart/form-data">
+        File to Upload:&nbsp; <input type="file" name="txtUpload[]" multiple size='40'/>
+        <br/><br/>
+		<input type="submit" name="btnUpload" value="Upload" />
+		&nbsp; &nbsp; &nbsp;<input type="reset" name="btnReset" value="Reset" />
+   </form> 
+
+</body>
+</html>

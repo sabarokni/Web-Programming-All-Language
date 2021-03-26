@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+        <title>Deposit Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="cssStyleHtmlpage.css">
+    <body class="registration container mt-5">
+        <h1 class="mt-5">Deposit Calculator</h1>
+        <hr/>
+        <form method="POST" action="DepositCalculator.php">
+            
+            <label for="pamount">Principle Amount: </label>
+            <input type="text" class="form-control" id="pamount" name="pamount">
+            
+            <label for="irate">Interest Rate(%): </label>
+            <input type="text" class="form-control" id="irate" name="irate">
+            
+            <label for="yeardeposit">Year to Deposit: </label>
+            <select name="year" class="form-control" id="yeardeposit">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            </select>
+           <hr/>
+            
+            <label for="name">Name : </label>
+            <input type="text" id="name" class="form-control" name="name"><br>
+            
+            <label for="pcode">Postal Code: </label>
+            <input type="text" id="pcode" class="form-control" name="pcode"><br>
+            
+            <label for="phonenumber">Phone Number: <br> (nnn-nnn-nnnn)</label>
+            <input type="text" class="form-control" name="phonenumber" placeholder="nnn-nnn-nnnn">
+            
+            <label for="exampleFormControlInput1">Email address: </label>
+            <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+            <hr/>
+            <h4>Preferred Contact Method: </h4>
+            
+            <br>
+            <input type = "radio" name = "phoneemail" value = "phone" />Phone<br>
+            <input type = "radio" name = "phoneemail" value = "email" />Email
+
+            <hr>
+            <h4>If phone is selected,when can we contact you ? <br>(check all applicable)</h4>
+             <br>
+            
+             <input type="checkbox" name="time[]" value="morning"/>  Morning<br>   
+             <input type="checkbox" name="time[]" value="afternoon"/>  Afternoon<br>  
+             <input type="checkbox" name="time[]" value="evening"/>  Evening<br>                    
+            <hr>
+            
+            <button type="submit" class="register_button" name="submit" value="calculate">Calculate</button> 
+            <button type="reset" class="clear_button" value="clear">Clear</button> 
+
+        </form>
+    </body>
+</html>

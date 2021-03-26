@@ -1,0 +1,51 @@
+<html xmlns = "http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Registration Form</title>
+   </head>
+   <body>
+      <h2>Please fill in all fields and click Register.</h2>
+   
+      <!-- post form data to form.php -->
+      <form method = "post" action = "form.php">
+         <h3>Your contacts?</h3>
+		 <table>
+            <tr>
+				<td>First Name:</td><td><input type = "text" name = "fname" /></td>
+			</tr>
+            <tr>
+				<td>Last Name:</td><td><input type = "text" name = "lname" /></td>
+			</tr>
+            <tr>
+				<td>Email:</td><td><input type = "text" name = "email" /></td>
+			</tr>
+           <tr>
+				<td>Phone:</td><td><input type = "text" name = "phone" /></td>
+			</tr>
+         </table>
+			<br />
+            <h3>Which book would you like information about? </h3>
+            <!-- create drop-down list containing book names -->
+            <select name = "book">
+               <option>Internet and WWW</option>
+               <option value="C++ Programming" selected="selected">C++ Programming</option>
+               <option value="Java How to Program">Java How to Program</option>
+               <option value="VB2010 Programming">Visual Basic 2010 Programming</option>
+			   <option value="PHP Programming">PHP Programming</option>
+            </select>
+            <br />
+			<br />
+			<h3>Which operating system are you currently using?</h3>
+            <!-- create five radio buttons -->
+            <input type = "radio" name = "os" value = "Windows XP" checked = "checked" />Windows XP		  
+            <input type = "radio" name = "os" value = "Windows Vista" />Windows Vista
+	<input type = "radio" name = "os" value = "Linux" />Windows 7<br/><br/>
+            <input type = "radio" name = "os" value = "Mac OS X" />Mac OS X
+            <input type = "radio" name = "os" value = "Linux" />Linux
+            <input type = "radio" name = "os" value = "Other" /> Other<br />
+			<br/><br/>
+            <!-- create a submit button -->
+            <input type = "submit" value = "Register" />
+         
+      </form>
+   </body>
+</html>

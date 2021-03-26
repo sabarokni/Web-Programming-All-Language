@@ -1,0 +1,31 @@
+body      { font-family: arial, sans-serif }
+div       { font-size: 10pt;
+			 text-align: center }
+table     { border: 0 }
+
+th	{ 	text-align: right;
+		background-color: #ffffaa; 
+		padding-top: 2px;
+		padding-bottom: 2px;
+		padding-left: 10px;
+		padding-right: 10px }  
+ 
+ td   { 	padding-top: 2px;
+		 padding-bottom: 2px;
+		 padding-left: 10px;
+		 padding-right: 10px }
+		 
+label 	  { display: block;
+			width: 100px;
+			float: left;
+			background-color: #ffffaa; 
+			margin: 2px 4px 6px 4px;
+			text-align: right;}
+br { clear: left; }
+
+.error    	{ color: red }
+.distinct 	{ color: blue; font: bold } 
+.button 	{border: 1px solid #f00; border-style: groove; width: 7em}
+.button:hover { border: 1px solid #f00; background: #eef;}
+.input 		{ border: 1px solid #006; background: #ffc; width:15em}
+.input:hover { border: 1px solid #f00; background: #ff6;}

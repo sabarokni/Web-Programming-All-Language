@@ -1,0 +1,17 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 24, 2020, 2:23:50 PM
+    Author     : Lenovo
+*/
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 20px solid blueviolet;
+}
+ body {background-color: lightgoldenrodyellow;}
