@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.algonquincollege.com/cst8259/labs"
+   xmlns:alg ="http://www.algonquincollege.com/cst8259/labs"
+   elementFormDefault="qualified" >
+	<xs:element name="restaurant_review">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="restaurant">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" />
+							<xs:element name="website" type="xs:string" />
+							<xs:element name="logo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="image">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element minOccurs="0" name="imgaeSource" type="xs:string" />
+													<xs:element minOccurs="0" name="imageSource" type="xs:string" />
+													<xs:element name="imageName" type="xs:string" />
+													<xs:element name="imageSize">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="width" type="xs:unsignedByte" />
+																<xs:element name="height" type="xs:unsignedByte" />
+															</xs:sequence>
+															<xs:attribute name="dimension" type="xs:string" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="address">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="StreetAddress" type="xs:string" />
+										<xs:element name="city" type="xs:string" />
+										<xs:element name="ProvinceState" type="xs:string" />
+										<xs:element name="PostalZipCode" type="alg:PostalCodeType" />
+										<xs:element name="country" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="phone">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="areaCode" type="xs:unsignedShort" />
+										<xs:element name="number" type="xs:string" />
+									</xs:sequence>
+									<xs:attribute name="type" type="alg:PhoneType" use="required" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="type" type="xs:string" />
+							<xs:element name="pricecredit">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:unsignedByte">
+											<xs:attribute name="min_value" type="xs:unsignedByte" use="required" />
+											<xs:attribute name="max_value" type="xs:unsignedByte" use="required" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="reviews">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="review">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="reviewer">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="first_name" type="xs:string" />
+																<xs:element name="middle_name" type="xs:string" />
+																<xs:element name="last_name" type="xs:string" />
+															</xs:sequence>
+															<xs:attribute name="gender" type="xs:string" use="required" />
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="date">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="day" type="xs:unsignedByte" />
+																<xs:element name="month" type="xs:string" />
+																<xs:element name="year" type="xs:unsignedShort" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="rating">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:unsignedByte">
+																	<xs:attribute name="min_value" type="xs:unsignedByte" use="required" />
+																	<xs:attribute name="max_value" type="xs:unsignedByte" use="required" />
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="summary" type="xs:string" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="menu">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" name="item">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name" type="xs:string" />
+													<xs:element minOccurs="0" name="description" type="xs:string" />
+													<xs:element maxOccurs="unbounded" name="price">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute name="currency" type="xs:string" use="required" />
+																	<xs:attribute name="quantity" type="xs:unsignedByte" use="optional" />
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute name="type" type="xs:string" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="PhoneType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Home"/>
+			<xs:enumeration value="Office"/>
+			<xs:enumeration value="Mobile"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name ="PostalCodeType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z]\d[a-zA-Z](\s)?\d[a-zA-Z]\d"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

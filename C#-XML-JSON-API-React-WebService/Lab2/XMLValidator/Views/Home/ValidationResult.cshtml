@@ -1,0 +1,58 @@
+﻿@model List<XMLValidator.Models.XmlValidationError>
+
+@{
+    ViewData["Title"] = "ValidationResult";
+}
+
+<h1>ValidationResult</h1>
+@if (Model.Count == 0)
+{
+    <p>No Error found when validating XML file <b>@ViewData["XMLFILE"]</b> against the schema <b>@ViewData["SCHEMAFILE"]</b></p>
+}
+@if (Model.Count > 0)
+{
+    <p>The Following Error were found when validating XML file  <b>@ViewData["XMLFILE"]</b>  against the schema <b>@ViewData["SCHEMAFILE"]</b></p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    XML Element
+                </th>
+                <th>
+                    Error Type
+                </th>
+                <th>
+                    Line Number
+                </th>
+                <th>
+                    Column Number
+                </th>
+                <th>
+                    Error Message
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Element)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ErrorType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Line)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Column)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

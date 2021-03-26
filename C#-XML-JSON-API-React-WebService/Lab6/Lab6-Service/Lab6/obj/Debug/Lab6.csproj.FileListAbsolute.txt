@@ -1,0 +1,16 @@
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\Lab6.dll.config
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\Lab6.dll
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\Lab6.pdb
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.csprojAssemblyReference.cache
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.dll
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.pdb
+C:\Users\yass\Desktop\web programming II\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\App_Data\restaurant_review .xml
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\Lab6.dll.config
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\Lab6.dll
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\Lab6.pdb
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.dll
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\obj\Debug\Lab6.pdb
+C:\Users\Lenovo\Desktop\Winter-2021\Web Programming II\Lab6-Saba-Rokni\Lab6\bin\App_Data\restaurant_review.xml
