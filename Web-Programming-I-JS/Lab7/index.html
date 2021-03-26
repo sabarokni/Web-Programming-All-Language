@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 7</title>
+</head>
+<style>
+    .btn {
+        background-color: rgb(7, 68, 60);
+        color: rgb(216, 231, 250);
+        padding: 16px 10px;
+        margin: 10px 10px;
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <h1>Having Fun with JavaScript Events</h1>
+    <h3>Click on image to add to cart</h3>
+    <table style="width:50%" id="gumlist">
+        <tr>
+            <td><button class="btn 1"><img src="img/gum1.jpg" alt="gum1" id="extra"></button></td>
+            <td><button class="btn 2"><img src="img/gum2.jpg" alt="gum2" id="doubleMint"></button></td>
+            <td><button class="btn 3"><img src="img/gum3.jpg" alt="gum3" id="trident"></button></td>
+            <td><button class="btn 4"><img src="img/gum4.jpg" alt="gum4" id="bubble"></button></td>
+        </tr>
+        <tr>
+            <td>Shopping Cart Items : <span id="item">0</span></td>
+        </tr>
+        <tr>
+            <td>Shopping Cart Total : <span id="total">0</span></td>
+        </tr>
+        <tr>
+            <td><button class="btn 5" id="clear">Clear</button></td>
+        </tr>
+    </table>
+    <script src="scripts/lab7.js" defer></script>
+</body>
+
+</html>

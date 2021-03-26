@@ -1,0 +1,61 @@
+
+  body{
+    padding: 1rem;
+    border: 20px solid rgb(3, 0, 19);
+
+  }
+  body>main{
+    border: 20px solid rgb(11, 0, 73);
+
+  }
+
+  main>button{
+    color: rgb(126, 2, 2);
+  }
+  body > header{
+    background-image: url("img/header.jpg");
+    background-color: rgb(1, 99, 48);
+    background-size:contain;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    color: rgb(76, 19, 19);
+    border: 20px solid rgb(11, 0, 73);
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.btn {
+  background-color: rgb(7, 68, 60);
+  color: rgb(216, 231, 250);
+  padding: 16px 10px;
+  margin: 10px 10px;
+  font-size: 16px;
+}

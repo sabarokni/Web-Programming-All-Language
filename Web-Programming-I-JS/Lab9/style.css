@@ -1,0 +1,67 @@
+.fleft{
+    float:left;
+}
+
+.clear{
+  clear:both;  
+}
+
+.button{
+    height:30px;
+    width:auto;
+    margin:3px;
+}
+
+.red-border{
+    border-style:solid;
+    border-width: 3px;
+    border-color: red;
+}
+
+.green-border{
+    border-style:solid;
+    border-width: 3px;
+    border-color: green;
+}
+
+.orange-border{
+    border-style:solid;
+    border-width: 3px;
+    border-color: orange;
+}
+
+.purple-border{
+    border-style:solid;
+    border-width: 3px;
+    border-color: purple;
+}
+
+.yellow-border{
+    border-style:solid;
+    border-width: 3px;
+    border-color: yellow;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+.green{
+    color:green;
+}
+
+.red{
+    color:red;
+}
+
+.blue{
+    color:blue;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.btn-background{
+    background-color: aqua;
+};

@@ -1,0 +1,10 @@
+/* form styles */
+table tr{
+    height:50px;
+    background-color: antiquewhite;
+}
+.alert{
+    color:red;
+    font-size: 2rem;
+}
+    
